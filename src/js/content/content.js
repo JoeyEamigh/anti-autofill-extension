@@ -1,5 +1,5 @@
 document.addEventListener('click', (e) => {
-  console.log(e);
+  // console.log(e);
   if (e.target.autocomplete !== 'nope') {
     e.target.autocomplete = 'nope';
     e.target.blur();

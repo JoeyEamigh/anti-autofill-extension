@@ -1,9 +1,9 @@
 chrome.webNavigation.onCompleted.addListener(async (data) => {
   const blockList = (await getBlockList()) || [];
-  console.log(data);
+  // console.log(data);
 
   blockList.forEach((url) => {
-    console.log(data.url.includes(url));
+    // console.log(data.url.includes(url));
     if (data.url.includes(url)) injectScript(data.tabId);
   });
 });
