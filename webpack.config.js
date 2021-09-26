@@ -76,6 +76,9 @@ var options = {
           );
         },
       },
+      {
+        from: 'src/img/icon-128.png',
+      },
     ]),
     new HtmlWebpackPlugin({
       template: path.join(__dirname, 'src', 'popup.html'),
